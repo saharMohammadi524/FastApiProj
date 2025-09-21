@@ -9,3 +9,4 @@ class User(Base):
     id: Mapped[UUID] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid4()))
     username: Mapped[str]= mapped_column(String(50),unique=True, nullable=True)
     password: Mapped[str]=mapped_column(String(100),nullable=False)
+    # test
